@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shenzhen online mobile store</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+   
+</head>
+<body>
+    <!----header starts here-->
+    <header>
+        <section class="logo">
+           <a href="/"> <img src="images/logo.png" alt="" class="nav-logo"></a>
+           <i class="fas fa-bars expander hideable"></i>
+        </section>
+        <nav class="expandable hidden">
+            <ul class="navbar">
+                <li class="list-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="list-item"><a active href="product.html" class="nav-link">Products</a></li>
+                <li class="list-item"><a  href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <form action="" method="get" class="expandable hidden">
+            <input type="textbox" name="q" placeholder="Search...">
+        </form>
+        <nav class="expandable hidden">
+        <ul class="auth-container">
+            <li class="auth-link"><a href="" class="nav-link">Login</a>
+            <span class="divider">|</span></li>
+            <li class="auth-link"><a href="" class="nav-link">SignUp</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!----header ends here-->
+    <main class="detail-main">
+        <div class="wrapper">
+            <div class="product-image-wrapper">
+                <img src="images/maxresdefault.jpg" class="product-image">
+            </div>
+            <div class="compare-container">
+                <table id="compare-table">
+                    <tr>
+                        <th>Brand</th>
+                        <td>Apple</td>     
+                    </tr>
+                    <tr>
+                        <th>Model</th>
+                        <td>Iphone 11 pro</td>
+                    </tr>
+                    <tr>
+                        <th>Cost</th>
+                        <td>$1450 + tax</td>
+                    </tr>
+                    <tr>
+                        <th>Memory</th>
+                        <td>8GB</td>
+                    </tr>
+                    <tr>
+                        <th>Storage</th>
+                        <td>256GB</td>
+                    </tr>
+                    <tr>
+                        <th>Display</th>
+                        <td>WQHD Super Amoled (Samsung)</td>
+                    </tr>
+                    <tr>
+                        <th>Buying Option</th>
+                        <td><a href="javascript:void(0)"><img src="images/amazon-Button.png" id="amazon-button"></a></td>
+                    </tr>
+                </table>
+                </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yuq_tYbtC8o?controls=0&mute=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; muted; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <!-- upper part of footer contains address, phone,and other links-->
+        <div class="footer-top">
+
+            <div class="footer-container footer-widget-container">
+                <div class="footer-info">
+                    <a href="javascript:void(0)">
+                        <img alt="website logo" src="images/logo.png">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- bottom part of footer -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="everestore-social-media">
+                    <ul class="social-media-list">
+
+                        <li><a target="_blank" href="http://facebook.com/" title="Like our facebook page"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://twitter.com/" title="follow us on twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://pinterest.com/" title="check us out on pinterest"><i class="fab fa-pinterest"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://instagram.com/" title="follow us on instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="https://www.youtube.com/" title="subscribe to our youtube channel"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    ©2019 Everestore All Rights Reserved
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script>
+    $(document).on("click",".expander",function(){
+        $('.expandable').removeClass('hidden');
+        $('.expander').addClass('binder');
+        $('.expander').removeClass('expander');
+    });
+
+    $(document).on("click",".binder",function(){
+        $('.expandable').addClass('hidden');
+        $('.binder').addClass('expander');
+        $('.binder').removeClass('binder');
+    });
+</script>
+</html>

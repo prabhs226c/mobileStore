@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shenzhen online mobile store</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+
+</head>
+
+<body id="home-page">
+    <!----header starts here-->
+    <header>
+        <section class="logo">
+            <a href="/"> <img src="images/logo.png" alt="" class="nav-logo"></a>
+            <i class="fas fa-bars expander hideable"></i>
+        </section>
+        <nav class="expandable hidden">
+            <ul class="navbar">
+                <li class="list-item"><a href="index.html" active class="nav-link">Home</a></li>
+                <li class="list-item"><a href="product.html" class="nav-link">Products</a></li>
+                <li class="list-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <form action="" method="get" class="expandable hidden">
+            <input type="textbox" name="q" placeholder="Search...">
+        </form>
+        <nav class="expandable hidden">
+            <ul class="auth-container">
+                <li class="auth-link"><a href="" class="nav-link">Login</a>
+                    <span class="divider">|</span></li>
+                <li class="auth-link"><a href="" class="nav-link">SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!----header ends here-->
+    <main>
+        <div class="banner">
+            <div class="banner-container">
+            </div>
+        </div>
+        <section>
+            <h4>Latest Products</h4>
+            <cardholder class="latest-offers">
+                <a href="product-detail.html" class="card-link">
+                    <card>
+                        <img src="images/product7.jpg" alt="">
+                        <hr>
+                        <section class="subsection-1">
+                            <card-title>Nokia Lumia 1050</card-title>
+                            <property>128Gb</property>
+                        </section>
+                        <section class="subsection-2">
+                            <colors>
+                                <color style="background:#fff;"></color>
+                                <color style="background:#c7bd3a;"></color>
+                                <color style="background:#7f92ac;"></color>
+                            </colors>
+                            <price>
+                                <old-price>$1500</old-price>
+                                <new-price>$1200</new-price>
+                            </price>
+                        </section>
+                    </card>
+                </a>
+                <a href="product-detail.html" class="card-link">
+                    <card>
+                        <img src="images/product6.jpg" alt="">
+                        <hr>
+                        <section class="subsection-1">
+                            <card-title>OnePlus 7|Bell</card-title>
+                            <property>256Gb</property>
+                        </section>
+                        <section class="subsection-2">
+                            <colors>
+                                <color style="background:#fff;"></color>
+                                <color style="background:darkslategrey;"></color>
+                                <color style="background:#5b578f;"></color>
+                            </colors>
+                            <price>
+                                <old-price>$1500</old-price>
+                                <new-price>$1200</new-price>
+                            </price>
+                        </section>
+                    </card>
+                </a>
+                <a href="product-detail.html" class="card-link">
+                    <card>
+                        <img src="images/product-icon.jpg" alt="">
+                        <hr>
+                        <section class="subsection-1">
+                            <card-title>Apple IPhone 11 pro|unlocked</card-title>
+                            <property>512Gb</property>
+                        </section>
+                        <section class="subsection-2">
+                            <colors>
+                                <color style="background:#fff;"></color>
+                                <color style="background:rgb(27, 25, 25);"></color>
+                                <color style="background:#a03030;"></color>
+                            </colors>
+                            <price>
+                                <old-price>$1500</old-price>
+                                <new-price>$1450</new-price>
+                            </price>
+                        </section>
+                    </card>
+                </a>
+
+
+            </cardholder>
+            <view-all>
+                <a href="product.html" id="view-all-offers" class="view-all-link">View All > ></a>
+            </view-all>
+
+            <h4>Brands</h4>
+            <brand-cards>
+                <brand-card>
+                    <a href="product.html"><img src="images/brand1.png" alt=""></a>
+                </brand-card>
+                <brand-card>
+                    <a href="product.html"><img src="images/brand2.jpg" alt=""></a>
+                </brand-card>
+                <brand-card>
+                    <a href="product.html"><img src="images/brand3.jpg" alt=""></a>
+                </brand-card>
+                <brand-card>
+                    <a href="product.html"><img src="images/brand3.jpg" alt=""></a>
+                </brand-card>
+                <brand-card>
+                    <a href="product.html"><img src="images/brand1.png" alt=""></a>
+                </brand-card>
+                <brand-link>
+                    <a href="product.html">View All</a>
+                </brand-link>
+            </brand-cards>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <!-- upper part of footer contains address, phone,and other links-->
+        <div class="footer-top">
+
+            <div class="footer-container footer-widget-container">
+                <div class="footer-info">
+                    <a href="javascript:void(0)">
+                        <img alt="website logo" src="images/logo.png">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- bottom part of footer -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="everestore-social-media">
+                    <ul class="social-media-list">
+
+                        <li><a target="_blank" href="http://facebook.com/" title="Like our facebook page"><i
+                                    class="fab fa-facebook-square"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://twitter.com/" title="follow us on twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://pinterest.com/" title="check us out on pinterest"><i
+                                    class="fab fa-pinterest"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://instagram.com/" title="follow us on instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="https://www.youtube.com/"
+                                title="subscribe to our youtube channel"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    ©2019 Everestore All Rights Reserved
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script>
+    $(document).on("click", ".expander", function () {
+        $('.expandable').removeClass('hidden');
+        $('.expander').addClass('binder');
+        $('.expander').removeClass('expander');
+    });
+
+    $(document).on("click", ".binder", function () {
+        $('.expandable').addClass('hidden');
+        $('.binder').addClass('expander');
+        $('.binder').removeClass('binder');
+    });
+</script>
+
+</html>
