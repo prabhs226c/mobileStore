@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shenzhen online mobile store</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+   
+</head>
+<body>
+    <!----header starts here-->
+    <header>
+        <section class="logo">
+           <a href="/"> <img src="images/logo.png" alt="" class="nav-logo"></a>
+           <i class="fas fa-bars expander hideable"></i>
+        </section>
+        <nav class="expandable hidden">
+            <ul class="navbar">
+                <li class="list-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="list-item"><a href="product.html" class="nav-link">Products</a></li>
+                <li class="list-item"><a active href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <form action="" method="get" class="expandable hidden">
+            <input type="textbox" name="q" placeholder="Search...">
+        </form>
+        <nav class="expandable hidden">
+        <ul class="auth-container">
+            <li class="auth-link"><a href="" class="nav-link">Login</a>
+            <span class="divider">|</span></li>
+            <li class="auth-link"><a href="" class="nav-link">SignUp</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!----header ends here-->
+    <main class="main-mapped">
+
+        <!---contact form-->
+        <div class="contact-form-container">
+            <form id="contact-form" method="POST" action="submitted.html">
+
+                <label for="fullname">Full Name <sup>*</sup></label>
+                <input id="fullname" type="text" name="full-name" placeholder="Full Name" maxlength="30" required="">
+
+                <label for="email-id">Email <sup>*</sup></label>
+                <input id="email-id" type="email" name="email-id" placeholder="Email Adress" maxlength="320" required="">
+
+                <label for="telephone">Phone Number <sup>*</sup></label>
+                <input id="telephone" type="tel" name="phone" placeholder="Phone Number" maxlength="10" required="">
+
+                <label for="addr-field">Address</label>
+                <textarea id="addr-field" name="address" placeholder="Address"></textarea>
+
+                <fieldset>
+                    <legend>Language<sup>*</sup></legend>
+
+                    <input id="en-lang" type="radio" checked="" name="language" value="en" required="">
+                    <label for="en-lang">English</label>
+
+                    <input id="fr-lang" type="radio" name="language" value="fr" required="">
+                    <label for="fr-lang">French</label>
+
+                    <input id="ot-lang" type="radio" name="language" value="ot" required="">
+                    <label for="ot-lang">Other</label>
+                    <input type="text" name="ot-language" placeholder="Other Language (optional)">
+                </fieldset>
+
+                <label for="fullname">Your Question <sup>*</sup></label>
+                <textarea name="query" placeholder="Your Question Here (required)" required=""></textarea>
+                <br>
+                <label class="contact-permission">How should we contact you?<sup>*</sup></label>
+                <input id="ct-pm1" type="checkbox" checked="" name="contact-permision-phone" value="phone" required="">
+                <label for="ct-pm1">Phone</label>
+                <input id="ct-pm2" type="checkbox" name="contact-permision-email" value="email" required="">
+                <label for="ct-pm2">Email</label>
+                <input type="submit" value="submit" class="submit-btn">
+                <input type="reset" value="Reset" class="reset-btn">
+            </form>
+        </div>
+        <!---contact form-->
+        <!---google maps-->
+        
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.3027433709426!2d-73.64289478448768!3d45.544235079102044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918e0c061b07f%3A0x647a6b6d7cb681a7!2sISI%2C+L&#39;institut+Sup%C3%A9rieur+d&#39;Informatique!5e0!3m2!1sen!2sca!4v1561143100065!5m2!1sen!2sca"
+            frameborder="0" style="border:0;width:100%;height:900px;position: relative;" allowfullscreen></iframe>
+        <!---google maps-->
+    </main>
+    <!--footer-->
+    <footer>
+        <!-- upper part of footer contains address, phone,and other links-->
+        <div class="footer-top">
+
+            <div class="footer-container footer-widget-container">
+                <div class="footer-info">
+                    <a href="javascript:void(0)">
+                        <img alt="website logo" src="images/logo.png">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- bottom part of footer -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="everestore-social-media">
+                    <ul class="social-media-list">
+
+                        <li><a target="_blank" href="http://facebook.com/" title="Like our facebook page"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://twitter.com/" title="follow us on twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://pinterest.com/" title="check us out on pinterest"><i class="fab fa-pinterest"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="http://instagram.com/" title="follow us on instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+
+                        <li><a target="_blank" href="https://www.youtube.com/" title="subscribe to our youtube channel"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    ©2019 Everestore All Rights Reserved
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script>
+    $(document).on("click",".expander",function(){
+        $('.expandable').removeClass('hidden');
+        $('.expander').addClass('binder');
+        $('.expander').removeClass('expander');
+    });
+
+    $(document).on("click",".binder",function(){
+        $('.expandable').addClass('hidden');
+        $('.binder').addClass('expander');
+        $('.binder').removeClass('binder');
+    });
+</script>
+</html>
